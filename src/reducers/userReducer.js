@@ -1,6 +1,7 @@
 const userReducer = (state = {
-    username: '-no one-'
-}, action) => {
+        username: '-no one-'
+    }, action) => {
+        
     console.log('userReducer running', action)
     switch (action.type) {
         case 'CHANGE_USER':

@@ -1,6 +1,6 @@
 const mathReducer = (state = {
-    count: 99,
-}, action) => {
+        count: 99,
+    }, action) => {
 
     console.log('mathReducer running', action)
     switch (action.type) {

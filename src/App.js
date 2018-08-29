@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-// import Main from './components/Main'
 import User from './components/User'
 import './App.css';
 import Counter from './components/Counter';
