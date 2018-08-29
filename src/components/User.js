@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import {changeUser} from '../actions/userActions'
 
 class User extends Component {
     render() {
@@ -22,7 +23,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         onUserChange: (e)=> {
-            const action = { type: 'CHANGE_USER', payload: `${e.target.value} THE KING!`}
+            const action = changeUser(`${e.target.value} THE KING!`);
             dispatch(action);
         }
     }
