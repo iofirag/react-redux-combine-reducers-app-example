@@ -5,7 +5,7 @@ class Counter extends Component {
     render() {
         return (
             <div>
-                <h1>Hi i'm counter:</h1>
+                <h1>Counter widget</h1>
                 <h2>{this.props.count}</h2>
                 <input type='button' value='increase' onClick={this.props.onIncrementClick}/>
                 <input type='button' value='decrement' onClick={this.props.onDecrementClick}/>

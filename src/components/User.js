@@ -5,8 +5,10 @@ class User extends Component {
     render() {
         return (
             <div>
+                <h1>User widget:</h1>
                 connected as <i>{this.props.username}</i>
-                <input type='button' value='switch user' onClick={this.props.onUserChange}/>
+                <br/>
+                <input type='string' onChange={this.props.onUserChange} />
             </div>
         );
     }
@@ -19,8 +21,8 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        onUserChange: ()=> {
-            const action = { type: 'CHANGE_USER'}
+        onUserChange: (e)=> {
+            const action = { type: 'CHANGE_USER', payload: `${e.target.value} THE KING!`}
             dispatch(action);
         }
     }
